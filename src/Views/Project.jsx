@@ -4,7 +4,7 @@ export default function Project({projects}) {
     return (
         <div className="h-screen p-4  text-[var(--text-color)] flex items-center flex-col md:justify-center">
             <div className="text-head font-bold ">PROJECTS</div>
-                <div className="m-4 shadow-lg rounded w-full h-full flex flex-col justify-center p-5 md:h-2/3">
+                <div className="m-4 shadow-lg rounded w-full h-full flex flex-col  p-5 md:h-2/3">
                     <div className="w-full flex font-bold   md:h-1/6 items-center pl-3 pt-3 text-lg">{projects[currentIndex].title}</div>
                     <div className="w-full whitespace-pre-line flex h-2/5 overflow-scroll mt-2 md:h-3/6 pl-3 text-lg">
                         {projects[currentIndex].description}
