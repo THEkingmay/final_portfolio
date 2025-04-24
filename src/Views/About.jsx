@@ -1,6 +1,6 @@
 export default function About({data}) {
   return (
-    <div className="h-screen p-4  text-[var(--text-color)] flex items-center flex-col md:justify-center">
+    <div className="p-4  text-[var(--text-color)] flex items-center flex-col md:justify-center">
       <div className="text-head font-bold">ABOUT ME</div>
         <div className="m-4 shadow-lg rounded w-full h-full p-5 flex flex-col md:h-2/3 md:flex-row">
           <div className="w-full overflow-hidden ">
