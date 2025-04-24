@@ -9,22 +9,22 @@ export default function Project({projects}) {
                     <div className="w-full whitespace-pre-line flex h-2/5  mt-2 md:h-3/6 pl-3 text-lg">
                         {projects[currentIndex].description}
                     </div>
-                    <div className="underline  flex w-full  p-4 text-lg  md:h-1/6 text-2xl">
-                        <a target="blank" className="mr-10 md:mr-5" href={projects[currentIndex].link}>Try{">"} </a>
+                    <div className="flex w-full  p-4 text-lg  md:h-1/6 text-2xl ">
+                        <a target="blank" className="hover:underline md:mr-5" href={projects[currentIndex].link}><span className="p-5">Try site{">"} </span></a>
                         {projects[currentIndex].code ? 
-                        (<a target="_blank" href={projects[currentIndex].code}> code {">"}</a>) : 
+                        (<a target="_blank" className="hover:underline" href={projects[currentIndex].code}> <span className="p-5 ">code {">"}</span></a>) : 
                         (<span>No code for this project.</span> )}
                     </div>
-                    <div className="w-full flex justify-between  md:h-1/6">
+                    <div className="w-full text-lg flex justify-between border-t md:h-1/6">
                         <button
                             onClick={() =>
                                 currentIndex > 0
                                 ? setCurrentIndex(currentIndex - 1)
                                 : setCurrentIndex(projects.length - 1)
                             }
-                            className="button-55 w-1/2 m-2"
+                            className="w-1/2   p-5 border-b border-r  hover:underline cursor-pointer"
                             >
-                            back
+                            {"<"}back
                             </button>
                             <button
                             onClick={() =>
@@ -32,9 +32,9 @@ export default function Project({projects}) {
                                 ? setCurrentIndex(currentIndex + 1)
                                 : setCurrentIndex(0)
                             }
-                            className="button-55 w-1/2 m-2"
+                            className=" w-1/2 p-5 border-b hover:underline cursor-pointer" 
                             >
-                            next
+                            next{">"}
                         </button>
                     </div>
             </div>
