@@ -1,5 +1,4 @@
 const mydata = {
-    img:"/src/Data/me.png",
     name:"Mr.Mathee Rewbumrung",
     university:"Kasetsart University",
     interests:[
