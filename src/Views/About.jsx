@@ -4,7 +4,7 @@ export default function About({data}) {
       <div className="text-head font-bold">ABOUT ME</div>
         <div className="m-4 shadow-lg rounded w-full h-full p-5 flex flex-col md:h-2/3 md:flex-row">
           <div className="w-full overflow-hidden ">
-             <img src="/src/Data/Me.png" alt="mypic"className="rounded-lg shadow-lg" />
+             <img src="/me.png" alt="mypic"className="rounded-lg shadow-lg" />
           </div>
           <div className="w-full p-4 flex flex-col md:text-lg ">
               <div>{data.name}</div>
